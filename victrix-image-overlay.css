@@ -1,0 +1,39 @@
+/* Victrix image overlay for GamePad Viewer - PlayStation 4 (White)
+   This does NOT rebuild or move the controller. It only removes the stock DS4 shell art,
+   places a Victrix controller image behind the live GamePad Viewer controls, and leaves
+   all buttons/sticks/bumpers/triggers at GamePad Viewer's original coordinates. */
+
+.controller.ds4.white.edit {
+  background-image: none !important;
+  background-color: transparent !important;
+  position: relative !important;
+  isolation: isolate !important;
+}
+
+/* Victrix controller image layer */
+.controller.ds4.white.edit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 806px;
+  height: 598px;
+  background-image: url('https://cdn.mos.cms.futurecdn.net/DHY8j5BmUNyS27t3RFP58X.jpg');
+  background-repeat: no-repeat;
+  background-size: 819px 819px;
+  background-position: 0px -53px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Leave GamePad Viewer controls untouched; only ensure they draw above the photo. */
+.controller.ds4.white.edit .triggers,
+.controller.ds4.white.edit .bumpers,
+.controller.ds4.white.edit .touchpad,
+.controller.ds4.white.edit .meta,
+.controller.ds4.white.edit .arrows,
+.controller.ds4.white.edit .abxy,
+.controller.ds4.white.edit .sticks,
+.controller.ds4.white.edit .dpad {
+  z-index: 5 !important;
+}
