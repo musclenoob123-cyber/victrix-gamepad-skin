@@ -1,0 +1,22 @@
+/* Victrix overlay V5 — uses the user's Victrix image as the controller shell.
+   Important: this file does NOT move or resize any GamePad Viewer controls. */
+
+.controller.ds4.white.edit {
+  background-image: url('https://cdn.jsdelivr.net/gh/musclenoob123-cyber/victrix-gamepad-skin@main/victrix-overlay-v5.webp') !important;
+  background-repeat: no-repeat !important;
+  background-size: 806px 598px !important;
+  background-position: 0 0 !important;
+  background-color: transparent !important;
+}
+
+/* Keep the stock GamePad Viewer input layers exactly where they already are. */
+.controller.ds4.white.edit .triggers,
+.controller.ds4.white.edit .bumpers,
+.controller.ds4.white.edit .touchpad,
+.controller.ds4.white.edit .meta,
+.controller.ds4.white.edit .arrows,
+.controller.ds4.white.edit .abxy,
+.controller.ds4.white.edit .sticks,
+.controller.ds4.white.edit .dpad {
+  z-index: 2 !important;
+}
