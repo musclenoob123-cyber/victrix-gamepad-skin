@@ -1,0 +1,80 @@
+/* Victrix Pro BFG Reloaded - self-contained GamePad Viewer edit skin
+   Built for PlayStation 4 (White), skin ID 8.
+   Original DS4 control geometry is preserved. */
+
+.controller.ds4.white.edit {
+  width:806px !important;
+  height:598px !important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='806' height='598' viewBox='0 0 806 598'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop stop-color='%23252a31'/%3E%3Cstop offset='1' stop-color='%230f1115'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23373d46'/%3E%3Cstop offset='1' stop-color='%23191d22'/%3E%3C/linearGradient%3E%3C/svg%3E") !important;
+  background-color:transparent !important;
+  position:relative !important;
+}
+
+/* Controller body built in CSS so the file is fully self-contained. */
+.controller.ds4.white.edit:before {
+  content:"";
+  position:absolute;
+  left:72px; top:82px;
+  width:662px; height:392px;
+  background:linear-gradient(145deg,#343a43 0%,#171b20 45%,#0d0f12 100%);
+  border:3px solid #08090b;
+  border-radius:170px 170px 145px 145px / 130px 130px 210px 210px;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.04), inset 0 -35px 55px rgba(0,0,0,.55), 0 18px 28px rgba(0,0,0,.35);
+  z-index:0;
+}
+.controller.ds4.white.edit:after {
+  content:"VICTRIX";
+  position:absolute;
+  left:50%; top:430px;
+  transform:translateX(-50%);
+  color:#b7bcc4;
+  font:700 18px/1 Arial,sans-serif;
+  letter-spacing:7px;
+  opacity:.85;
+  z-index:1;
+}
+.controller.ds4.white.edit > * { position:relative; z-index:2; }
+
+/* Hide stock artwork but retain GamePad Viewer input elements. */
+.ds4.edit .button,.ds4.edit .face,.ds4.edit .back,.ds4.edit .start,
+.ds4.edit .touchpad,.ds4.edit .meta,.ds4.edit .bumper,.ds4.edit .trigger,
+.ds4.edit .stick { background-image:none !important; }
+
+/* Exact DS4 geometry from GamePad Viewer. */
+.ds4.edit .sticks{width:361px!important;height:105px!important;top:308px!important;left:228px!important}
+.ds4.edit .stick{width:94px!important;height:94px!important;border-radius:50%!important;background:radial-gradient(circle at 38% 34%,#59616c 0 10%,#343a42 11% 38%,#171a1f 39% 61%,#090a0c 62% 100%)!important;box-shadow:0 0 0 4px #08090b,0 4px 7px rgba(0,0,0,.7)!important}
+.ds4.edit .stick.left{top:0!important;left:0!important}
+.ds4.edit .stick.right{top:calc(100% - 105px)!important;left:calc(100% - 105px)!important}
+.ds4.edit .stick.pressed{filter:brightness(1.35)}
+
+.ds4.edit .abxy{width:170px!important;height:171px!important;top:159px!important;left:567px!important}
+.ds4.edit .button{width:55px!important;height:55px!important;border-radius:50%!important;background:radial-gradient(circle,#343940 0 55%,#14171b 57% 75%,#08090b 77% 100%)!important;box-shadow:0 2px 5px rgba(0,0,0,.7)!important}
+.ds4.edit .button.pressed{filter:brightness(1.65);box-shadow:0 0 16px rgba(152,83,255,.95)!important}
+.ds4.edit .a{bottom:0!important;left:58px!important}
+.ds4.edit .b{top:58px!important;right:0!important}
+.ds4.edit .x{top:58px!important;left:0!important}
+.ds4.edit .y{top:0!important;left:58px!important}
+
+.ds4.edit .dpad{width:125px!important;height:126px!important;top:181px!important;left:92px!important}
+.ds4.edit .face{background:#20242a!important;border:2px solid #090a0c!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.08),0 2px 4px rgba(0,0,0,.6)!important}
+.ds4.edit .face.pressed{background:#5a3b8e!important;box-shadow:0 0 12px rgba(152,83,255,.8)!important}
+.ds4.edit .dpad .up,.ds4.edit .dpad .down{width:36px!important;height:52px!important}
+.ds4.edit .dpad .left,.ds4.edit .dpad .right{width:52px!important;height:36px!important}
+.ds4.edit .dpad .up{left:44px!important;top:0!important}.ds4.edit .dpad .down{left:44px!important;bottom:0!important}
+.ds4.edit .dpad .left{top:45px!important;left:0!important}.ds4.edit .dpad .right{top:45px!important;right:0!important}
+
+.ds4.edit .touchpad{width:262px!important;height:151px!important;left:272px!important;top:122px!important;background:linear-gradient(145deg,#252a30,#111419)!important;border:3px solid #090a0c!important;border-radius:13px!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.06)!important}
+.ds4.edit .touchpad.pressed{box-shadow:0 0 16px rgba(152,83,255,.8),inset 0 0 18px rgba(152,83,255,.25)!important}
+
+.ds4.edit .meta{width:42px!important;height:42px!important;left:382px!important;bottom:216px!important;border-radius:50%!important;background:radial-gradient(circle,#343a42 0 48%,#101216 50% 100%)!important}
+.ds4.edit .meta.pressed{box-shadow:0 0 12px rgba(152,83,255,.9)!important;filter:brightness(1.4)}
+
+.ds4.edit .arrows{width:352px!important;height:46px!important;top:142px!important;left:227px!important}
+.ds4.edit .back,.ds4.edit .start{width:28px!important;height:46px!important;border-radius:8px!important;background:#1c2025!important;border:2px solid #090a0c!important}
+.ds4.edit .back.pressed,.ds4.edit .start.pressed{background:#573989!important;box-shadow:0 0 10px rgba(152,83,255,.8)!important}
+
+.ds4.edit .triggers{width:588px!important;height:90px!important;left:109px!important}
+.ds4.edit .trigger{width:99px!important;height:100%!important;background:linear-gradient(#24292f,#0c0e11)!important;border-radius:22px 22px 10px 10px!important;border:2px solid #08090b!important}
+.ds4.edit .bumpers{width:588px!important;height:23px!important;left:109px!important;top:94px!important}
+.ds4.edit .bumper{background:#1a1e23!important;border:2px solid #08090b!important;border-radius:9px!important}
+.ds4.edit .trigger.pressed,.ds4.edit .bumper.pressed{filter:brightness(1.55);box-shadow:0 0 10px rgba(152,83,255,.7)!important}
