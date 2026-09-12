@@ -1,0 +1,11 @@
+/* V9: real binary Victrix JPG + untouched stock DS4 input geometry */
+.controller.ds4.white.edit {
+  background-image: url('https://raw.githubusercontent.com/musclenoob123-cyber/victrix-gamepad-skin/main/victrix-controller.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  background-color: transparent !important;
+}
+
+/* Hide stock shell-only decorative layers; keep live input elements. */
+.controller.ds4.white.edit .touchpad { background-image: none !important; }
