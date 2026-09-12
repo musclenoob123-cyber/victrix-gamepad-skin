@@ -1,0 +1,10 @@
+/* V8: use the actual committed Victrix shell image directly on the stock DS4 controller.
+   No pseudo-elements. No geometry/position overrides. */
+
+.controller.ds4.white.edit {
+  background-image: url('https://cdn.jsdelivr.net/gh/musclenoob123-cyber/victrix-gamepad-skin@main/victrix-overlay-v5.webp') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  background-color: transparent !important;
+}
