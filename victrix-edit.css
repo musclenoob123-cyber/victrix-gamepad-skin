@@ -5,7 +5,7 @@
 .controller.ds4.white.edit {
   width:806px !important;
   height:598px !important;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='806' height='598' viewBox='0 0 806 598'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop stop-color='%23252a31'/%3E%3Cstop offset='1' stop-color='%230f1115'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23373d46'/%3E%3Cstop offset='1' stop-color='%23191d22'/%3E%3C/linearGradient%3E%3C/svg%3E") !important;
+  background-image:none !important;
   background-color:transparent !important;
   position:relative !important;
 }
@@ -21,6 +21,7 @@
   border-radius:170px 170px 145px 145px / 130px 130px 210px 210px;
   box-shadow:inset 0 0 0 2px rgba(255,255,255,.04), inset 0 -35px 55px rgba(0,0,0,.55), 0 18px 28px rgba(0,0,0,.35);
   z-index:0;
+  pointer-events:none;
 }
 .controller.ds4.white.edit:after {
   content:"VICTRIX";
@@ -32,8 +33,10 @@
   letter-spacing:7px;
   opacity:.85;
   z-index:1;
+  pointer-events:none;
 }
-.controller.ds4.white.edit > * { position:relative; z-index:2; }
+/* IMPORTANT: don't change child positioning mode. GamePad Viewer already positions these absolutely. */
+.controller.ds4.white.edit > * { z-index:2; }
 
 /* Hide stock artwork but retain GamePad Viewer input elements. */
 .ds4.edit .button,.ds4.edit .face,.ds4.edit .back,.ds4.edit .start,
