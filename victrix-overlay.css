@@ -1,0 +1,22 @@
+/* Victrix overlay skin for GamePad Viewer PS4 White. Keeps stock input geometry, replaces only the controller artwork. */
+.controller.ds4.white.edit {
+  background-image:url('https://cdn.jsdelivr.net/gh/musclenoob123-cyber/victrix-gamepad-skin@main/victrix-base-transparent.png') !important;
+  background-repeat:no-repeat !important;
+  background-size:854px 555px !important;
+  background-position:-20px 19px !important;
+  background-color:transparent !important;
+}
+
+/* Remove the stock PS4 shell artwork only. Keep all live control elements in their original positions. */
+.controller.ds4.white.edit::before,
+.controller.ds4.white.edit::after { content:none !important; }
+
+/* Keep stock controls visible above the Victrix image. */
+.controller.ds4.white.edit .triggers,
+.controller.ds4.white.edit .bumpers,
+.controller.ds4.white.edit .touchpad,
+.controller.ds4.white.edit .meta,
+.controller.ds4.white.edit .arrows,
+.controller.ds4.white.edit .abxy,
+.controller.ds4.white.edit .sticks,
+.controller.ds4.white.edit .dpad { z-index:5 !important; }
