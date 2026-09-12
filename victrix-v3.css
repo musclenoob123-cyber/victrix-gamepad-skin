@@ -1,0 +1,39 @@
+/* V3 diagnostic/fixed skin: DO NOT alter GamePad Viewer geometry or positioning. */
+
+/* Only replace the controller's base artwork. Keep GamePad Viewer's own width, height, position and all child coordinates untouched. */
+.controller.ds4.white.edit {
+  background-image:
+    radial-gradient(ellipse at 50% 48%, rgba(42,47,55,.98) 0 43%, rgba(16,19,24,.99) 44% 64%, transparent 65%),
+    linear-gradient(135deg, transparent 0 18%, #1d2127 19% 34%, #0d0f13 35% 65%, #1d2127 66% 81%, transparent 82%) !important;
+  background-color: transparent !important;
+}
+
+/* Keep every GamePad Viewer control exactly where the stock PS4 White skin puts it. */
+.controller.ds4.white.edit .triggers,
+.controller.ds4.white.edit .trigger,
+.controller.ds4.white.edit .bumpers,
+.controller.ds4.white.edit .bumper,
+.controller.ds4.white.edit .touchpad,
+.controller.ds4.white.edit .meta,
+.controller.ds4.white.edit .arrows,
+.controller.ds4.white.edit .back,
+.controller.ds4.white.edit .start,
+.controller.ds4.white.edit .abxy,
+.controller.ds4.white.edit .button,
+.controller.ds4.white.edit .sticks,
+.controller.ds4.white.edit .stick,
+.controller.ds4.white.edit .dpad,
+.controller.ds4.white.edit .face {
+  /* intentionally no position/size overrides */
+}
+
+/* Visual-only tint so we can confirm this exact file is loaded without disturbing geometry. */
+.controller.ds4.white.edit .touchpad { filter: brightness(.55) saturate(.2) !important; }
+.controller.ds4.white.edit .button,
+.controller.ds4.white.edit .stick,
+.controller.ds4.white.edit .face,
+.controller.ds4.white.edit .trigger,
+.controller.ds4.white.edit .bumper,
+.controller.ds4.white.edit .back,
+.controller.ds4.white.edit .start,
+.controller.ds4.white.edit .meta { filter: brightness(.72) saturate(.35) !important; }
