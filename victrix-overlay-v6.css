@@ -1,0 +1,8 @@
+/* V6: use the user's Victrix product image directly as the base artwork. Keep all stock PS4 control geometry untouched. */
+.controller.ds4.white.edit {
+  background-image: url('https://images2.imgbox.com/placeholder-do-not-use') !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center center !important;
+  background-color: transparent !important;
+}
